@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#producTitle{
+    text-align: center;
+    color: black;
+    font-size: 5em;
+    font-family: fantasy;
+    font-weight: 500;
+}
+
+
+.productinput{
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.clase1{
+    border-top: 0;
+    background-image: url("../../img/fondoimp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    transition: all 400ms ease-out;
+    text-align: center;
+    margin: 0;
+}
+
+.clase1 h1{
+    font-size: 50px;
+    font-family: cursive;
+    color: #000;
+    margin: auto;
+    visibility: visible;
+    transition: all 400ms ease-out;
+}
+
+.clase1 h3{
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+    margin: auto;
+    display: none; /*Se usa display:none en vez de visibility:hidden para que no aparezc*/
+    transition: all 400ms ease-out;
+}
+
+.clase1 p{
+    color: #fff;
+    font-size: 25px;
+    font-family: cursive;
+    margin: auto;
+    display: none;
+    transition: all 400ms ease-out;
+}
+
+.clase1:hover{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    opacity: 0.8;
+}
+
+.clase1:hover > h1{
+    color: #fff;
+}
+
+.clase1:hover > h3{
+    display: contents;
+}
+
+.clase1:hover > p{
+    margin-top: -200px;
+    display: contents;
+}
+
+.clase2{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+	margin-top: -20px;
+    background-image: url(../../img/Banner2.png);
+    justify-content: center;
+    align-items: center;
+}
+
+.clase2_2{ 
+    color: whitesmoke;
+    font-size:x-large;
+}
+
+.clase2_3{  
+    width: auto;
+    color: whitesmoke;
+    font-size:x-large;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.clase3h2{
+    position: relative;
+    width: 100%;
+    margin-top: -20px;
+    text-align: center;
+    background-color:rgba(184, 173, 173, 0.178);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.clase3{
+    position: relative;
+    width: 100%;
+	margin-top: -20px;
+    display: inline-flex;
+    background-color:rgba(184, 173, 173, 0.178);
+}
+
+.clase3_1{
+    width: 33.33%;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.clase3_1h3{
+    text-align: center;
+}
+
+.containerGridOne{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    justify-content: center;
+    /*grid-row-gap: 2%; */
+}
+
+.gridContainerOne, .gridContainerFour, .gridContainerFive{
+    text-align: center;
+    margin: auto; 
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+     
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+.gridContainerTwo{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #302f30;
+    height: 480px;
+    text-align: center;
+
+}
+.gridContainerThree{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #302f30;
+    height: 480px;
+    text-align: center;
+}
+
+.gridContainerSix{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #302f30;
+    height: 480px;
+    text-align: center;
+
+}
+
+.containerGridOne h2 {
+    font-size: xx-large;
+    font-family: cursive;
+
+}
+
+.containerGridOne p {
+    font-size: x-large;
+    font-family: cursive;
+
+}
+
+.containerGridOne button{
+    font-size: x-large;
+    font-family: cursive;
+    width: 6em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color:#fff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+
+}
+
+
+.containerGrid{
+    width: 100%;
+    background-color: #302f30;;
+}
+
+.tituloGrid{
+    font-size: xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.gridContainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    justify-content: center;
+    grid-row-gap: 2%; 
+}
+
+.gridItem{
+    max-height: auto;
+    max-width: auto;
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+
+.gridImage{
+    border-radius: 2em;
+    width: 80%;
+    height: auto;
+    
+}
+
+.gridImage1{
+    max-width: 400px;
+    max-height: 480px;
+}
+
+.productItem{
+    margin: 2em;
+    max-height: auto;
+    max-width: auto;
+    text-align: center;
+    border: 2px solid #000; /* 2px de ancho, sólido y de color negro */
+    padding: 20px; /* Agrega un espacio interno para separar el contenido del borde */
+    border-radius: 2em;
+    
+}
+
+.productImage{
+    border-radius: 2em;
+    width: 80%;
+    height: auto;
+}
+
+.productImage1{
+    max-width: 400px;
+    max-height: 480px;
+}
+
+.productItem h2{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: fantasy;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.productItem h3{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: fantasy;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.productItem h4{
+    font-size:100%;
+    font-weight: 500;
+    font-family: fantasy;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.productItem button{
+    font-size: x-large;
+    font-family: cursive;
+    width: 6em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color:#fff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+}
+
+.gridH4{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.clase6 h2{
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 4em;
+    font-family: fantasy;
+}
+
+.clase5{
+    position: relative;
+    background-color:rgba(187, 184, 184, 0.212);
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.carrousel {
+    margin: auto;
+    width: 30%;
+    object-fit: scale-down;
+  }
+  
+  
+.listaproduct{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gridImage:hover{
+    transition: transform .5s;
+    transform: scale(1.5);
+}
+
+.divUsers{
+    background-image: url(../../img/impresion3d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.formUsers{  
+    background-color: #f2f2f2;
+    width: 20%;
+    margin: auto;
+    height: auto;
+    border-radius: 2em;
+}
+
+.formUsers input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #000;
+    border-radius: 0.3em;
+    cursor: pointer; /* Cambia el tipo de cursor */
+    font-family: cursive;
+}
+
+.formUsers h1{
+    font-size: xx-large;
+    font-family: cursive;
+}
+
+.buttonForm{
+    font-size: large;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    border-radius: 0.3em;
+    color: #fff;
+    background-color: #000;
+}
+
+.creaCuenta{
+    display: none;
+}
+
+.creaCuenta1{
+    display:contents;
+}
+
+.buttonActive{
+    font-size: medium;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    border-radius: 0.3em;
+    background-color:rgba(80, 82, 82, 0.966);
+    color: #fff;
+}
+
+.buttonDisactive{
+    font-size: medium;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    border-radius: 0.3em;
+    background-color:#000;
+    color: #fff;
+}
