@@ -1,6 +1,6 @@
 import CarouselComponent from "../../components/Carrousel";
 import {Link} from 'react-router-dom'
-
+import GridElement from "../../components/Scrolling"; 
 
 const Main = () => {
   return (
@@ -55,32 +55,16 @@ const Main = () => {
             </div>
         </div>
 
-        <div className="containerGridOne">
-            <div className="gridContainerOne">
-                <h2>Modelado 2D</h2>
-                <p>Realizamos planos de piezas mecanicas, y tambien de obras incluyendo los planos de las diferentes energias a utilizar.</p>
-                <button>Conoce más</button>
-            </div>
-            <div className="gridContainerTwo"><img src="../img/plano2d.jpg" alt="Plano 2d" /></div>
-            <div className="gridContainerThree"><img src="../img/autocad3d.jpg" alt="Autocad 3d" /></div>
-            <div className="gridContainerFour">
-                <h2>Modelado 3D</h2>
-                <p>Trabajamos con mates personalizados de diferentes personajes animados, tambien con bustos de famosos y entre otros modelos pueden encontrar con forma de camiones,
-                    autos y tambien de diferentes clubes.</p>
-                <button>Conoce más</button>
-            </div>
-            <div className="gridContainerFive">
-                <h2>Escaneo 3D</h2>
-                <p>Contamos con escaners 3d semi-profesionales para poder llevar a cabo el modelado en tres dimensiones de tus piezas, figuras y hasta personas¡¡.</p>
-                <button>Conoce más</button>    
-            </div>
-            <div className="gridContainerSix"><img src="../img/escaner creality.jpg" alt="Scanner creality" /></div>
-        </div>
 
-        <div className="carrousel">
-        <h2>Últimos trabajos</h2>
-            <CarouselComponent/> 
-        </div>    
+        <GridElement/>
+    
+        <div className="carrouselContainer">
+            <h2>Últimos trabajos</h2>
+            <div className="carrousel">
+                <CarouselComponent/> 
+            </div>  
+        </div>
+          
         
 
         

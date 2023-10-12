@@ -19,6 +19,8 @@ const Header = () => {
                         <Link className="hnav" to="/productos">Productos</Link>
                         <Link className="hnav" to="/registro">Registro</Link>
                         <Link className="hnav" to="/account">Mi Cuenta</Link>
+                        <Link className="hnav" to="/create">Crear</Link>
+                        <Link className="hnav" to="/update">Update</Link>
                     </nav>
                 </div>
                 <SearchButton/>
